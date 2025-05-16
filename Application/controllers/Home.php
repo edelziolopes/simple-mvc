@@ -7,7 +7,7 @@ class Home extends Controller
   public function index()
   {
     $Produtos = $this->model('Produtos');
-    $Produto = $Produtos::findAll();        
+    $Produto = $Produtos::findIndex();        
     $Categorias = $this->model('Categorias');
     $Categoria = $Categorias::findAll();
     $Imagens = $this->model('Imagens');
