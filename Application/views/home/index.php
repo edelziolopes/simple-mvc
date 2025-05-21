@@ -1,12 +1,21 @@
-<h1>Produtos</h1>
-<?php foreach($data['produtos'] as $produto): ?>
-  <div class="card" style="width: 18rem;">
-    <img src="<?=$produto['imagem_link']?>" class="card-img-top">
-    <div class="card-body">
-      <h5 class="card-title"><?=$produto['produto_descricao']?></h5>
-      <p class="card-text"><?=$produto['produto_preco']?></p>
-      <p class="card-text"><?=$produto['categoria_nome']?></p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="d-flex flex-wrap gap-4">
+  <?php foreach($data['produtos'] as $produto): ?>
+    <div class="card shadow" style="width: 18rem;">
+      <img src="<?=$produto['imagem_link']?>" class="card-img-top" style="height: 200px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fas fa-box-open me-2"></i><?=$produto['produto_descricao']?>
+        </h5>
+        <p class="card-text text-success fw-bold">
+          <i class="fas fa-tag me-2"></i>R$ <?=number_format($produto['produto_preco'], 2, ',', '.')?>
+        </p>
+        <p class="card-text text-muted">
+          <i class="fas fa-layer-group me-2"></i><?=$produto['categoria_nome']?>
+        </p>
+        <a href="#" class="btn btn-primary w-100">
+          <i class="fas fa-shopping-cart me-2"></i>Comprar
+        </a>
+      </div>
     </div>
-  </div>
-<?php endforeach; ?>
+  <?php endforeach; ?>
+</div>

@@ -1,7 +1,4 @@
-<div class="container">
-  <div class="row">
-    <div class="col-8 offset-2 text-center" style="margin-top:150px">
-      <h1>View Categoria</h1>
-    </div>
-  </div>
-</div>
+<h1>Categorias</h1>
+<?php foreach($data['categorias'] as $categoria): ?>
+<p><?=$categoria['nome'];?></p>
+<?php endforeach; ?>

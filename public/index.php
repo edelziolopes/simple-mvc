@@ -7,6 +7,8 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,6 +34,9 @@
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="/categoria"><i class="fa-solid fa-tags"></i> Categorias</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/imagem"><i class="fa-solid fa-image"></i> Imagens</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i> Contatos</a>
